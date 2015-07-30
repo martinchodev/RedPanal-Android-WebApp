@@ -2,9 +2,9 @@
 <resources>
 
     <string name="app_name">RedPanal</string>
-    <string name="action_settings">Configuración</string>
-    <string name="title_activity_splash">SplashActivity</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="recargar">Recargar</string>
+    <string name="espere">Por favor espere</string>
+    <string name="cargando">Cargando…</string>
+    <string name="sin_internet">Sin conexión a Internet</string>
 
 </resources>

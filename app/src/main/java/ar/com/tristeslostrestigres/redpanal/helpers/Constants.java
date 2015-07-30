@@ -1,9 +1,11 @@
-package ar.com.tristeslostrestigres.redpanal.Helpers;
+package ar.com.tristeslostrestigres.redpanal.helpers;
 
 /*
  * Application-wide Constants
  */
 public class Constants {
+
+    public static final String URL_PANAL = "http://redpanal.org";
 
     @SuppressWarnings(value = "unused")
     public static final boolean MSG_DEBUG = true;
