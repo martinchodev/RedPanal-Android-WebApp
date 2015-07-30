@@ -1,11 +1,11 @@
-package com.vuk.martin.appmaterial;
+package ar.com.tristeslostrestigres.redpanal;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.vuk.martin.appmaterial.Helpers.Notification;
+import ar.com.tristeslostrestigres.redpanal.Helpers.Notification;
 
 
 public class MainActivity extends CustomActionBarActivity {

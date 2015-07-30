@@ -1,9 +1,9 @@
-package com.vuk.martin.appmaterial;
+package ar.com.tristeslostrestigres.redpanal;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
-import com.vuk.martin.appmaterial.Helpers.Console;
+import ar.com.tristeslostrestigres.redpanal.Helpers.Console;
 
 public class CustomActionBarActivity extends ActionBarActivity {
 
