@@ -1,2 +1,6 @@
-# Material-Design-Base-App
-Base app implementing the Material Design Toolbar and styles
+# RedPanal WebApp
+
+WebApp para RedPanal.org
+
+### Licencia
+Esta aplicación está publicada bajo GNU GENERAL PUBLIC LICENSE v3 (ver LICENSE)
