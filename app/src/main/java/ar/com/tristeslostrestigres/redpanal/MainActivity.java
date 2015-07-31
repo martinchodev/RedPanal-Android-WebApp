@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
@@ -130,6 +131,14 @@ public class MainActivity extends CustomActionBarActivity {
 
     }
 
+
+    @Override
+    public void onBackPressed() {
+        if (!progressDialog.isShowing()) progressDialog.show();
+        webView.goBack();
+    }
+
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -194,6 +203,20 @@ public class MainActivity extends CustomActionBarActivity {
                         Toast.LENGTH_LONG).show();
                 return false;
             }
+        }
+
+        if (id == R.id.salir) {
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setMessage(getString(R.string.confirmar_salida))
+                    .setPositiveButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+                    })
+                    .setNegativeButton(getString(R.string.no), null)
+                    .show();
         }
 
         return super.onOptionsItemSelected(item);
