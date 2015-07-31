@@ -21,7 +21,7 @@ Trello público: https://trello.com/b/h7k7y6yK/redpanal
 
 Próximamente
 
-*** F-Droid
+### F-Droid
 
 Próximamente
 
