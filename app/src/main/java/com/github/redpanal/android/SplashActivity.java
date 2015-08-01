@@ -17,7 +17,7 @@
     If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ar.com.tristeslostrestigres.redpanal;
+package com.github.redpanal.android;
 
 import android.content.Intent;
 import android.os.Bundle;

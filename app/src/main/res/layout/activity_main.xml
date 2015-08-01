@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ar.com.tristeslostrestigres.redpanal.MainActivity">
+    tools:context="com.github.redpanal.android.MainActivity">
 
     <include
         android:id="@+id/app_bar"

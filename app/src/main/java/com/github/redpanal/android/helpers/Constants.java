@@ -1,4 +1,4 @@
-package ar.com.tristeslostrestigres.redpanal.helpers;
+package com.github.redpanal.android.helpers;
 
 /*
  * Application-wide Constants

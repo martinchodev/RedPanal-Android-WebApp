@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="ar.com.tristeslostrestigres.redpanal.MainActivity">
+    tools:context="com.github.redpanal.android.MainActivity">
 
     <item
         android:id="@+id/recargar"

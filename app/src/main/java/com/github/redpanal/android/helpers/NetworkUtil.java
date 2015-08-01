@@ -17,7 +17,7 @@
     If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ar.com.tristeslostrestigres.redpanal.helpers;
+package com.github.redpanal.android.helpers;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

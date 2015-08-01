@@ -17,7 +17,7 @@
     If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ar.com.tristeslostrestigres.redpanal;
+package com.github.redpanal.android;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -40,9 +40,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import ar.com.tristeslostrestigres.redpanal.helpers.Constants;
-import ar.com.tristeslostrestigres.redpanal.helpers.Helpers;
-import ar.com.tristeslostrestigres.redpanal.receivers.NetworkChangeReceiver;
+import com.github.redpanal.android.helpers.Constants;
+import com.github.redpanal.android.helpers.Helpers;
+import com.github.redpanal.android.receivers.NetworkChangeReceiver;
 
 
 public class MainActivity extends CustomActionBarActivity {

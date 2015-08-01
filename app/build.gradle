@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "ar.com.tristeslostrestigres.redpanal"
+        applicationId "com.github.redpanal.android"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1

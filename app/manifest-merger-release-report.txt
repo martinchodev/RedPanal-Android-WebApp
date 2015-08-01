@@ -33,7 +33,7 @@ MERGED from com.android.support:support-v4:22.2.0:22:5
 		ADDED from AndroidManifest.xml:10:9
 	android:theme
 		ADDED from AndroidManifest.xml:12:9
-activity#ar.com.tristeslostrestigres.redpanal.MainActivity
+activity#com.github.redpanal.android.MainActivity
 ADDED from AndroidManifest.xml:13:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:16:13
@@ -43,7 +43,7 @@ ADDED from AndroidManifest.xml:13:9
 		ADDED from AndroidManifest.xml:15:13
 	android:name
 		ADDED from AndroidManifest.xml:14:13
-activity#ar.com.tristeslostrestigres.redpanal.SplashActivity
+activity#com.github.redpanal.android.SplashActivity
 ADDED from AndroidManifest.xml:19:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:22:13

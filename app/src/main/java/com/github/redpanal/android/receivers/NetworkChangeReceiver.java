@@ -17,13 +17,13 @@
     If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ar.com.tristeslostrestigres.redpanal.receivers;
+package com.github.redpanal.android.receivers;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import ar.com.tristeslostrestigres.redpanal.helpers.NetworkUtil;
+import com.github.redpanal.android.helpers.NetworkUtil;
 
 public class NetworkChangeReceiver extends BroadcastReceiver {
     public static final String CONNECTION_STATE_CHANGE = "CONNECTION_STATE_CHANGE";
