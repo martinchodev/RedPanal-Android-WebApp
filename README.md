@@ -10,12 +10,8 @@ Esta aplicación está publicada bajo GNU GENERAL PUBLIC LICENSE v3 (ver COPYING
 
 Trello público: https://trello.com/b/h7k7y6yK/redpanal
 
-### Sobre el autor
-
-- Martín Vukovic
-- Donaciones: http://martinv.tip.me
-- Diaspora: https://joindiaspora.com/people/7c39340ef7847d9c
-- Twitter: @martin_legion
+### Autor
+Martín Vukovic
 
 ### Google Play
 
