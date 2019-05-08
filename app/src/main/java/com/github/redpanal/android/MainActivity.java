@@ -29,6 +29,7 @@ import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -45,11 +46,10 @@ import com.github.redpanal.android.helpers.Helpers;
 import com.github.redpanal.android.receivers.NetworkChangeReceiver;
 
 
-public class MainActivity extends CustomActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
 
     private static final String TAG = "RedPanal Main";
-    private Toolbar app_bar;
     private WebView webView;
     private ProgressDialog progressDialog;
     private BroadcastReceiver networkStateReceiver;
@@ -61,7 +61,7 @@ public class MainActivity extends CustomActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        app_bar = (Toolbar) findViewById(R.id.app_bar);
+        Toolbar app_bar = findViewById(R.id.app_bar);
         setSupportActionBar(app_bar);
 
         regNetworkStateChangeReceiver();
@@ -109,14 +109,12 @@ public class MainActivity extends CustomActionBarActivity {
             }
 
             public void onPageFinished(WebView view, String url) {
-//                Log.i(TAG, "Terminó de cargar: " + url);
                 if (progressDialog.isShowing()) {
                     progressDialog.dismiss();
                 }
             }
 
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-//                Log.e(TAG, "Error: " + description);
                 if (progressDialog.isShowing()) progressDialog.dismiss();
 
                 new AlertDialog.Builder(MainActivity.this)
@@ -182,11 +180,13 @@ public class MainActivity extends CustomActionBarActivity {
             @Override
             public void onReceive(Context context, Intent intent) {
                 Bundle extras = intent.getExtras();
-                if (extras.getString(NetworkChangeReceiver.CONNECTION_STATE_CHANGE).equals("Wifi enabled") ||
-                        extras.getString(NetworkChangeReceiver.CONNECTION_STATE_CHANGE).equals("Mobile data enabled")) {
-                    // Conexión establecida
-                } else {
-                    // Conexión perdida
+                if (extras != null) {
+                    if (extras.getString(NetworkChangeReceiver.CONNECTION_STATE_CHANGE).equals("Wifi enabled") ||
+                            extras.getString(NetworkChangeReceiver.CONNECTION_STATE_CHANGE).equals("Mobile data enabled")) {
+                        // Conexión establecida
+                    } else {
+                        // Conexión perdida
+                    }
                 }
             }
         };
